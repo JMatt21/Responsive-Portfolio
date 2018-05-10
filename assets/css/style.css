@@ -17,13 +17,13 @@ p, li, a, .PortTxt, .submitButton {
 }
 
 h1 {
-    position: relative;
-    top: -103px;
+    margin: 0 0 0 20%;
     background: #4aaaa5;
     float: left;
     padding:  20px 25px 24px;
     color:white;
     border-bottom: #777777 solid 1px;
+    height: 45%;
 }
 
 h2{
@@ -58,7 +58,6 @@ img {
 }
 
 container{
-    min-width: 960px;
     margin: 0 20%;
     float: left;
     overflow: visible;
@@ -93,18 +92,14 @@ hr {
 }
 
 #links {
-    position: relative;
-    bottom: 80px;
-    float: left;
-    margin: 0 0 0 39.36%;
+    float: right;
+    margin: 0 15px 0 0;
     padding: 0;
     line-height: 80px;
     font-size: 18px;
 }
 
 #header {
-    min-width: 1171px;
-    position: relative;
     width: 100%;
     background: #ffffff;
     border-bottom: #777777 solid 2px;
@@ -115,7 +110,7 @@ hr {
     margin-top: 25px;
     border: #777777 solid 1px;
     background: #ffffff;
-    padding: 15px;
+    padding: 25px;
 }
 
 #footer {
@@ -173,4 +168,51 @@ hr {
     content: "";
     clear: both;
     display: table;
+}
+
+@media screen and (max-width: 980px){
+    container {
+        /* margin: 0 10%; */
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1 {
+        margin-left: 8%;
+        font-size: 18px;
+        height: 44%;
+    }
+    container {
+        margin: 0 8%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    container {
+        margin: 0 4%;
+    }
+    h1 {
+        text-align: center;
+        height: 20%;
+        padding: 25px 0;
+        margin: 0;
+        width: 100%;
+    }
+    #links {
+        position: relative;
+        bottom: 15px;
+        margin: 0;
+        text-align: center;
+        float: inherit;
+        width: 100%;
+    }
+
+    img {
+        /* width: 300px; */
+        /* height: 250px; */
+    }
+    #header {
+        height: 130px;
+    }
+    
 }
