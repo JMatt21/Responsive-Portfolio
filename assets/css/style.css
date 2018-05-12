@@ -1,5 +1,6 @@
 html{
     overflow-y: scroll; 
+    overflow-x: hidden;
 }
 
 body {
@@ -43,7 +44,7 @@ h4 {
 
 input {
     padding: 10px;
-    margin: 5px 0 5px 15px;
+    margin: 10px 0 5px 15px;
 }
 
 textarea{
@@ -57,11 +58,11 @@ img {
     margin: 9px 15px 0;
 }
 
-container{
+/* container{
     margin: 0 20%;
     float: left;
     overflow: visible;
-}
+} */
 
 p, li{
     margin: 0 50px 15px 15px;
@@ -107,10 +108,10 @@ hr {
 }
 
 #index {
-    margin-top: 25px;
+    margin: 25px 20% 0;
     border: #777777 solid 1px;
     background: #ffffff;
-    padding: 25px;
+    padding: 24px;
 }
 
 #footer {
@@ -171,26 +172,27 @@ hr {
 }
 
 @media screen and (max-width: 980px){
-    container {
-        /* margin: 0 10%; */
+    #index {
+        margin: 25px 15% 0;
+    }
+    h1 {
+        margin-left: 15%;
     }
 }
 
 @media screen and (max-width: 768px){
     h1 {
         margin-left: 8%;
-        font-size: 18px;
-        height: 44%;
+        font-size: 26px;
+        line-height: 38px;
     }
-    container {
-        margin: 0 8%;
+    #index {
+        margin: 25px 8% 0;
     }
 }
 
 @media screen and (max-width: 640px){
-    container {
-        margin: 0 4%;
-    }
+
     h1 {
         text-align: center;
         height: 20%;
@@ -198,6 +200,10 @@ hr {
         margin: 0;
         width: 100%;
     }
+    h2 {
+        min-width: 150px;
+    }
+
     #links {
         position: relative;
         bottom: 15px;
@@ -206,13 +212,26 @@ hr {
         float: inherit;
         width: 100%;
     }
-
-    img {
-        /* width: 300px; */
-        /* height: 250px; */
+    .PortImg{
+        /* float: initial; */
+        margin: 0 5px 5px;
+    }
+    #profilepicture {
+        align-content: center;
+        float: inherit;
+        margin-right: 60px;
     }
     #header {
         height: 130px;
+        min-width: 330px;
     }
-    
+    #index {
+        min-width: 220px;
+    }
+}
+@media screen and (max-width: 578px){
+    .PortImg{
+        float: inherit;
+        margin: 5px auto;
+    }
 }
