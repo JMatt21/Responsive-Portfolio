@@ -74,7 +74,7 @@ a {
     color: #777777;
     text-decoration: none;
     font-weight: normal;
-
+    cursor: pointer;
 }
 
 a:hover {
@@ -219,16 +219,15 @@ hr {
 }
 
 @media screen and (max-width: 640px){
-
+    p {
+        font-size: 18px;
+    }
     h1 {
         text-align: center;
         height: 20%;
         padding: 25px 0;
         margin: 0;
         width: 100%;
-    }
-    h2 {
-        min-width: 150px;
     }
 
     #links {
@@ -253,7 +252,8 @@ hr {
         min-width: 330px;
     }
     #content {
-        min-width: 220px;
+        /* min-width: 240px; */
+        margin: 15px;
     }
 }
 @media screen and (max-width: 578px){
