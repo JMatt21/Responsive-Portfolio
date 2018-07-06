@@ -74,16 +74,14 @@ a {
     color: #777777;
     text-decoration: none;
     font-weight: normal;
-    display: inline-block;     
-    position: relative;    
-    z-index: 1;     
-    padding: 2em;     
-    margin: -2em; 
+
 }
 
 a:hover {
     color:black;
 }
+
+
 
 hr {
     margin: 20px 15px;
@@ -156,6 +154,11 @@ hr {
 
 .PortTxtColor {
     color: #ffffff;
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
 }
 
 .PortTxtColor:hover {
