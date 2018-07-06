@@ -13,7 +13,7 @@ h1, h2, h4{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-p, li, a, .PortTxt, .submitButton {
+p, li, a, .PortTxt, .submitButton, button {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -74,6 +74,11 @@ a {
     color: #777777;
     text-decoration: none;
     font-weight: normal;
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
 }
 
 a:hover {
@@ -101,9 +106,10 @@ hr {
     height: 80px;
 }
 
-#index {
+#content {
     margin: 25px 20% 0;
-    border: #777777 solid 1px;
+    border: #777777c0 solid 4px;
+    border-radius: 10px;
     background: #ffffff;
     padding: 24px;
 }
@@ -117,6 +123,10 @@ hr {
     background: #666666;
     color: white;
     border-top: solid #4aaaa5 10px;
+}
+
+#profilepicture{
+    margin: 0 15px 0 15px;
 }
 
 .PortImg {
@@ -174,11 +184,14 @@ hr {
 }
 
 @media screen and (max-width: 980px){
-    #index {
+    #content {
         margin: 25px 15% 0;
     }
     h1 {
         margin-left: 15%;
+    }
+    P {
+        margin: 0;
     }
 }
 
@@ -188,7 +201,7 @@ hr {
         font-size: 26px;
         line-height: 38px;
     }
-    #index {
+    #content {
         margin: 25px 8% 0;
     }
 }
@@ -227,7 +240,7 @@ hr {
         height: 130px;
         min-width: 330px;
     }
-    #index {
+    #content {
         min-width: 220px;
     }
 }
